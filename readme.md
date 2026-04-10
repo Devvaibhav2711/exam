@@ -51,3 +51,42 @@
 #Command	Use
 #git clean -n	Preview files to be removed
 #git clean -f	Remove untracked files
+
+---------------------------------------------------------------------------------
+✅ Basic Docker Commands
+Command	Use
+docker --version	Check Docker version
+docker info	Display system-wide information
+✅ Images
+Command	Use
+docker images	List all Docker images
+docker pull <image>	Download image from Docker Hub
+docker build -t <name> .	Build image from Dockerfile
+docker rmi <image>	Delete an image
+docker history <image>	Show image layers
+docker tag <src> <target>	Rename or retag an image
+✅ Containers
+Command	Use
+docker run <image>	Run a container
+docker run -d <image>	Run in detached mode
+docker run -it <image> sh	Run interactively inside container
+docker ps	List running containers
+docker ps -a	List all containers
+docker stop <container>	Stop a running container
+docker start <container>	Start an existing container
+docker restart <container>	Restart a container
+docker rm <container>	Delete a container
+docker logs <container>	View container logs
+docker exec -it <container> sh	Execute command inside container
+✅ Container Management
+Command	Use
+docker inspect <container>	Get detailed container info
+docker top <container>	Show running processes
+docker stats	Show resource usage of containers
+docker cp <container>:<path> <local>	Copy from container to host
+docker cp <local> <container>:<path>	Copy from host to container
+✅ Volumes
+Command	Use
+docker volume create <name>	Create a volume
+docker volume ls	List volumes
+docker volume rm <name>	Delete a volume
